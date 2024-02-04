@@ -29,6 +29,8 @@ const cube2 = new THREE.Mesh(
 cube2.position.x = -2;
 group.add(cube2);
 
+group.position.y = 2;
+
 const axesHelper = new THREE.AxesHelper();
 scene.add(axesHelper);
 
@@ -44,7 +46,9 @@ const sizes = {
  * Camera
  */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 3;
+camera.position.z = 5;
+camera.position.x = 1;
+camera.position.y = 1;
 scene.add(camera);
 
 /**
